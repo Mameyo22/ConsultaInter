@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>::: Intranet RIBEIRO CENTRAL:::</title>
+<link href="ribeiro.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="modulos.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+    <div id="factura" class="boton">
+        <div id="titulo">
+            <p>
+            Detalle de Factura
+            <img class="botones_nav" src="../Imagen/close.gif" alt="Cerrar" width="20" height="20" onClick="javascript:history.back(1);" onMouseOver="this.src='../Imagen/close_over.gif'"  onMouseOut="this.src='../Imagen/close.gif'">
+            <img class="botones_nav" src="../Imagen/printer4.jpg" alt="Imprimir" width="25" height="20" onClick="javascript:window.print();">
+            </p>
+        </div>
+        <div id="cabecera" class="busqueda_fondo">
+		    <label for="SucCod"> Sucursal</label>
+            <input class="cabecera_1" type="text" id="SucCod">
+            <input class="cabecera_2" type="text" id="SucNom">
+			<label for="LocCod">Local</label>
+			<input class="cabecera_1" type="text" id="LocCod">
+			<input class="cabecera_2" type="text" id="LocNom">
+            <br>
+		    <label for="pvt">Comprobante</label>
+             <input class='cabecera_1' type='text' id='pvt' >
+             <input class='cabecera_1' type='text' id='comp'>
+             <input class='cabecera_1' type='text' id='letra'>
+             <input class='cabecera_1' type='text' id='tipo' >
+			<label for="fecha">Fecha</label>
+			<input class='cabecera_1' type='text' id='fecha'>
+            <br>
+   		    <label for="Clicod">Cliente</label>
+             <input class='cabecera_1' type='text' id='Clicod'>
+             <input class='cabecera_2' type='text' id='Clinom'>			
+            <label for="cuit">CUIT</label>
+			<input class='cabecera_2' type='text' id='cuit' >
+			<label for="ib">I.B.</label>
+			<input class='cabecera_2' type='text' id='ib' >
+        </div>
+        <div id="items" class="items">
+            <table class='items' width='100%'  border='1' cellspacing='0' cellpadding='0' >
+                <tr>
+                    <th width='9%' scope='col' class='cabecera'>Cantidad</th>
+					<th width='10%' scope='col' class='cabecera'>Art&iacute;culo</th>
+					<th width='53%' scope='col' class='cabecera'>Descripci&oacute;n</th>
+					<th width='14%' scope='col' class='cabecera'>Unitario</th>
+					<th width='14%' scope='col' class='cabecera'>Sub Total </th>
+					<th width='14%' scope='col' class='cabecera'>Devuelto</th>
+				</tr>
+                <tr>
+                    <td align='right' class='busqueda_text'>1</td>
+                    <td class='busqueda_text'>032020123000</td>
+                    <td class='busqueda_text'>TV LED 32 SMART SONY</td>
+                    <td align='right' class='busqueda_text'> 3299.00 </td>
+                    <td align='right' class='busqueda_text'>3500.00</td>
+                    <td align='right' class='busqueda_text'>0</td>
+                </tr>
+                <tr>
+                    <td align='right' class='busqueda_text'>1</td>
+                    <td class='busqueda_text'>032020123000</td>
+                    <td class='busqueda_text'>TV LED 32 SMART SONY</td>
+                    <td align='right' class='busqueda_text'> 3299.00 </td>
+                    <td align='right' class='busqueda_text'>3500.00</td>
+                    <td align='right' class='busqueda_text'>0</td>
+                </tr>
+	        </table>
+            <br>
+        </div>
+        <div id="cuotas" class="cuotas">
+            <table class='cuotas'>
+			    <tr>
+				    <th class="totales" >Cuota</th>
+					<th class="totales">Vto.</th>
+					<th class="totales">Importe</th>
+				</tr>
+                <tr>
+                    <td align='right'>1</td>
+                    <td align='center'>10/01/2017</td>
+                    <td align='right'>100.00</td>
+                </tr>
+                <tr>
+                    <td align='right'>2</td>
+                    <td align='center'>10/02/2017</td>
+                    <td align='right'>100.00</td>
+                </tr>
+                <tr>
+                    <td align='right'>3</td>
+                    <td align='center'>10/03/2017</td>
+                    <td align='right'>100.00</td>
+                </tr>
+                <tr>
+                    <td align='right'>4</td>
+                    <td align='center'>10/04/2017</td>
+                    <td align='right'>100.00</td>
+                </tr>
+                <tr>
+                    <td align='right'>5</td>
+                    <td align='center'>10/05/2017</td>
+                    <td align='right'>100.00</td>
+                </tr>
+                <tr>
+                    <td align='right'>6</td>
+                    <td align='center'>10/06/2017</td>
+                    <td align='right'>100.00</td>
+                </tr>
+                <tr>
+				    <td colspan='2' align='right' class="totales" >Total </td>
+					<td><div align='right' id='total'>600.00</div></td>
+                </tr>
+            </table>
+        </div>
+        <div id="totales"  >
+            <label for="subtotal">SUB TOTAL</label>
+            <input id="subtotal" class="busqueda_text" type="text">
+            <br>
+            <label for="iva">IVA</label>
+            <input id="iva" class="busqueda_text" type="text">
+            <label for="ivad">IVA AD.</label>
+            <input id="ivad" class="busqueda_text" type="text">
+            <br>
+            <label for="ii">INCIDENCIA INTERNOS</label>
+            <input id="ii" class="busqueda_text" type="text">
+            <br>
+            <label for="rf">RECARGO FINANCIERO</label>
+            <input id="rf" class="busqueda_text" type="text">
+            <br>
+            <label for="ivarf">IVA R.F.</label>
+            <input id="ivarf" class="busqueda_text" type="text">
+            <label for="ivarfad">IVA R.F.AD.</label>
+            <input id="ivarfad" class="busqueda_text" type="text">
+            <br>
+            <label for="perc">PERCEPCIONES</label>
+            <input id="perc" class="busqueda_text" type="text">
+            <br>
+            <label for="totalf"> TOTAL</label>
+            <input id="totalf" class="busqueda_text" type="text">
+            <br>            
+        </div>
+    </div>
+
+
